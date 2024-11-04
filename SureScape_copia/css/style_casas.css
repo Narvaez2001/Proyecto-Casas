@@ -1,0 +1,226 @@
+.casas {
+    margin-top: 79px;
+}
+
+.filtros-container {
+    display: flex;
+    justify-content: space-around;
+    /* Distribuye los filtros de manera uniforme */
+    background-color: #ffffff;
+    /* Color de fondo suave */
+    padding: 10px 20px;
+    border-radius: 8px;
+    /* Bordes redondeados */
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px;
+    /* Espacio inferior para separar de la lista de casas */
+}
+
+.filtro-btn {
+    background-color: #ffffff;
+    /* Color de fondo primario */
+    color: #000000;
+    /* Color del texto */
+    border: none;
+    /* Sin borde */
+    padding: 10px 15px;
+    border-radius: 5px;
+    /* Bordes redondeados */
+    font-size: 16px;
+    cursor: pointer;
+    /* Indicador de interactividad */
+    transition: background-color 0.3s ease;
+    /* Animación de transición */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.filtro-btn p {
+    padding-left: 5px;
+    margin: 0;
+}
+
+.filtro-btn:hover {
+    background-color: #35353554;
+    /* Color de fondo al pasar el ratón */
+}
+
+.filtro-btn.active {
+    background-color: #00000018;
+    /* Color de fondo cuando el filtro está activo */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .filtros-container {
+        flex-direction: row;
+        /* Los filtros se apilan en columnas en pantallas pequeñas */
+        align-items: center;
+        /* Centra los elementos */
+    }
+
+    .filtro-btn {
+        width: 100%;
+        /* Los botones de filtro ocupan todo el ancho */
+        text-align: center;
+        /* Texto centrado */
+        margin-bottom: 10px;
+        /* Espacio inferior entre botones */
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .swiper-button-prev {
+        display: none !important;
+    }
+
+    .swiper-button-next {
+        display: none !important;
+    }
+}
+
+@media (max-width:550px) {
+    .filtro-btn span {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+.container-casas {
+    max-width: 100%;
+    /*
+    border: 1px solid #ddd;
+    */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-casas a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a .container-casas {
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+a .container-casas:hover {
+    transform: scale(1.02);
+    /* Aumenta un poco el tamaño al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Añade un poco de sombra al hacer hover */
+    cursor: pointer;
+}
+
+.swiper-wrapper {
+    border-radius: 20px !important;
+}
+
+
+.slider-wrapper {
+    width: 100%;
+    height: 200px;
+
+}
+
+.swiper-slide {
+
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.swiper-slide {
+    transition: transform 0.3s ease-in-out;
+}
+
+.swiper-pagination-bullet {
+    background-color: #ffffff !important;
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ffffff !important;
+    opacity: 1;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color: rgba(255, 255, 255, 0.5);
+    /* Blanco con 50% de opacidad */
+}
+
+
+.card-content {
+    padding: 15px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.house-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.house-location,
+.house-price {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/*
+.btn-ver-mas {
+    background-color: #077bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ver-mas:hover {
+    background-color: #0056b3;
+}
+*/
