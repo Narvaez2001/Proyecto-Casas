@@ -273,19 +273,15 @@ body {
 .slider-card {
     background: #fffffff1;
     padding: 0px 0px;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* Borde suave */
     border-radius: 10px;
     transform: scale(0.9);
     opacity: 0.5;
     transition: all 0.3s;
     max-width: 330px;
     object-fit: cover;
-    /* Ajusta el ancho máximo de las tarjetas */
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12),  /* Sombra más grande y difusa */
-    0 50px 100px rgba(0, 0, 0, 0.15); /* Sombra adicional para el efecto 3D */
-    
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Borde suave */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3); /* Sombra solo en la parte inferior */
 }
-
 .slider-card img {
     overflow: hidden;
     border-radius: 5px 5px 0px 0px;
@@ -380,6 +376,8 @@ body {
 
 @media (max-width: 768px){
 
+    
+
     .agenda-section{
         text-align: center;
         height: 700px;
@@ -406,7 +404,6 @@ body {
         align-items: center;
         padding: 0;
         margin: 0;
-       
     }
 
     .header-agent .title-footer{
@@ -435,13 +432,81 @@ body {
         width: 100%;
     }
     .slider-card {
+        border-radius: 8px; /* Ajusta el radio según lo que necesites */
+        overflow: hidden; /* Esto recorta cualquier contenido, incluyendo sombras, que se desborde */
         border: 1px solid rgba(0, 0, 0, 0.1); /* Borde suave */
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), /* Sombra principal */
-        0 20px 40px rgba(0, 0, 0, 0.15); /* Sombra adicional para efecto 3D */
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3); /* Sombra solo en la parte inferior */
     }
     
+}
+
+@media (max-width: 667px){
+
+    
+
+    .agenda-section{
+        text-align: center;
+        height: 700px;
+        padding: 40px;
+    }
+    .body-agent{
+        flex-direction: column;
+    }
+
+    .title-centro .highlight{
+        font-size: 70px;
+        font-weight: 700;
+        
+    }
+
+    .movil-title h2{
+        font-size: 2.5rem;
+    }
+
+    .header-agent {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-agent .title-footer{
+        transform: none;
+        font-size: 10px;
+    }
+
+    .header-agent .title-centro{
+        transform: none;
+    }
+    .title-centro .highlight{
+        font-size: 50px;
+    }
+    
+    .content-container .description{
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+
+
+    .owl-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 550px;
+        width: 100%;
+    }
+    .slider-card {
+        border-radius: 8px; /* Ajusta el radio según lo que necesites */
+        overflow: hidden; /* Esto recorta cualquier contenido, incluyendo sombras, que se desborde */
+        border: 1px solid rgba(0, 0, 0, 0.1); /* Borde suave */
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Sombra solo en la parte inferior */
+    }
     
 }
+
+
 
 
 .boton-info{
